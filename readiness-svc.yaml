@@ -1,0 +1,11 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: readiness-svc
+spec:
+  selector:
+    app: rns
+  ports:
+    - protocol: "TCP"
+      port: 80
+      targetPort: 80
